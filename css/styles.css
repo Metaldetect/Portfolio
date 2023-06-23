@@ -115,7 +115,7 @@ body {
   overflow: hidden;
 }
 .container {
-  max-width: 375px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -232,9 +232,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
-  border-bottom: 1px solid #e7e9fc;
+  /* border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -320,7 +320,7 @@ body {
 }
 .header-social-icon {
   display: block;
-  stroke: var(--stroke-icon-color);
+  stroke: var(--primary-bg-color);
   fill: var(--fill-icon-color);
   width: 32px;
   height: 32px;
@@ -328,9 +328,8 @@ body {
 .header-social-icon:focus,
 .header-social-icon:hover {
   stroke: var(--secondary-accent-color);
-  fill: var(--accent-color);
 
-  transition-property: fill, stroke;
+  transition-property: stroke;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -339,7 +338,6 @@ body {
 
 .hero {
   width: 100%;
-  background-image: url(../img/hero/wall@2x.webp);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -373,7 +371,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-subtitle {
-    width: 400px;
     font-size: 36px;
     margin-bottom: 10px;
   }
@@ -385,7 +382,7 @@ body {
   }
 }
 .hero-text {
-  width: 262px;
+  /* width: 262px; */
   font-size: 18px;
   line-height: 111.111111%; /* 20/18 */
   color: var(--primary-bg-color);
@@ -598,13 +595,6 @@ body {
 /* -----------about-me------------ */
 
 .about-me {
-  background: rgb(217, 217, 217);
-  background: linear-gradient(
-    342deg,
-    rgba(217, 217, 217, 1) 0%,
-    rgba(187, 187, 187, 0.1740897042410714) 11%,
-    rgba(116, 112, 112, 1) 100%
-  );
   padding-top: 60px;
   padding-bottom: 60px;
   background-size: cover;
@@ -748,7 +738,6 @@ body {
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
 }
 .portfolio-title {
   display: flex;
@@ -861,13 +850,6 @@ body {
   max-height: 500px;
   padding-top: 40px;
   padding-bottom: 60px;
-
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.9191877434567577) 40%,
-    rgba(204, 204, 204, 1) 100%
-  );
 }
 .footer-container {
   display: flex;
