@@ -1,4 +1,6 @@
 /* Reset styles */
+@import url("reset.css");
+
 :root {
   --primary-text-color: #190f0f;
   --secondary-text-color: #2e2f42;
@@ -11,9 +13,6 @@
   --secondary-accent-color: #23a4cf;
   --customers-color: #8e8f99;
 }
-html {
-  scroll-behavior: smooth;
-}
 #more {
   display: none;
 }
@@ -21,83 +20,81 @@ html {
   display: none;
   color: red;
 }
+
 #myScrollBtn {
   display: none;
   position: fixed;
   bottom: 10px;
   right: 20px;
   z-index: 99;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
   border: none;
   outline: none;
-  background-color: var(--secondary-accent-color);
-  color: var(--primary-bg-color);
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+  background-size: 200% auto;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
   cursor: pointer;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 14px;
 }
-
 #myScrollBtn:hover {
-  background-color: var(--accent-color);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 125%; /* 20/16 */
   letter-spacing: -0.02em;
   color: var(--primary-text-color);
+  background: linear-gradient(
+    100deg,
+    #a14258,
+    #b37a40,
+    #3e655f,
+    #aa535d,
+    #5d75a5
+  );
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease-in-out infinite;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  padding: 0;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 .overlay.backdrop {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   position: fixed;
   top: 0;
   left: 0;
-
   z-index: 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   height: 100%;
-
   background: rgba(46, 47, 66, 0.4);
 }
 .backdrop.active {
@@ -418,7 +415,7 @@ img {
 }
 
 .hero-btn span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -544,7 +541,7 @@ img {
   margin-bottom: 40px;
 }
 .modal-form-check::before {
-  content: '';
+  content: "";
 
   display: block;
   width: 16px;
@@ -781,14 +778,14 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  max-width: 280px;
+  max-width: 330px;
   max-height: 500px;
   border-radius: 15px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-img {
     margin-right: 16px;
-    max-width: 450px;
+    max-width: 400px;
     max-height: 500px;
   }
 }
@@ -825,7 +822,7 @@ img {
 }
 
 .read-more-btn span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
