@@ -32,12 +32,7 @@
   text-transform: uppercase;
   border: none;
   outline: none;
-  background-image: linear-gradient(
-    to right,
-    #ff6e7f 0%,
-    #bfe9ff 51%,
-    #ff6e7f 100%
-  );
+  background-color: transparent;
   background-size: 200% auto;
   transition: 0.5s;
   box-shadow: 0 0 20px #eee;
@@ -47,7 +42,7 @@
   font-size: 14px;
 }
 #myScrollBtn:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
 }
@@ -750,7 +745,7 @@ body {
   font-size: 32px;
   margin-bottom: 60px;
   text-transform: uppercase;
-  color: var(--customers-color);
+  color: var(--primary-bg-color);
 }
 
 .portfolio-item {
@@ -786,7 +781,7 @@ body {
 
 .portfolio-subtitle {
   font-size: 24px;
-  color: var(--customers-color);
+  color: var(--primary-bg-color);
   margin-bottom: 10px;
 }
 .portfolio-text {
@@ -837,7 +832,7 @@ body {
   width: 40px;
   height: 10px;
   border-radius: 15px;
-  background-color: var(--accent-color);
+  background-color: var(--primary-bg-color);
 }
 
 /* -------------footer------------ */
